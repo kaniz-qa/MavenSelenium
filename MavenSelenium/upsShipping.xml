@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+	<test name="Test">
+		<groups>
+			<run>
+				<include name="smokeTest"/>
+			</run>
+		</groups>
+					
+		<classes>
+			<class name="ups.pack.testRunner.UpsShippingTest" />
+			<!-- <class name="ups.pack.testRunner.UpsShippingTest" />  -->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

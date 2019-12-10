@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="24987" started-at="2019-12-04T15:48:43Z" finished-at="2019-12-04T15:49:08Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="24987" started-at="2019-12-04T15:48:43Z" finished-at="2019-12-04T15:49:08Z">
+      <class name="ups.pack.testRunner.UpsLoginTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:ups.pack.testRunner.UpsLoginTest@147e2ae7]" name="beforeMethod" is-config="true" duration-ms="5875" started-at="2019-12-04T15:48:43Z" finished-at="2019-12-04T15:48:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:ups.pack.testRunner.UpsShippingTest@448c8166]" name="beforeMethod" is-config="true" duration-ms="6553" started-at="2019-12-04T15:48:49Z" finished-at="2019-12-04T15:48:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeTestMethod()[pri:0, instance:ups.pack.testRunner.UpsTrackingTest@4470fbd6]" name="beforeTestMethod" is-config="true" duration-ms="2310" started-at="2019-12-04T15:48:55Z" finished-at="2019-12-04T15:48:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestMethod -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:ups.pack.testRunner.UpsLoginTest@147e2ae7]" name="loginTest" duration-ms="2039" started-at="2019-12-04T15:48:58Z" finished-at="2019-12-04T15:49:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:ups.pack.testRunner.UpsLoginTest@147e2ae7]" name="afterTest" is-config="true" duration-ms="4080" started-at="2019-12-04T15:49:03Z" finished-at="2019-12-04T15:49:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:ups.pack.testRunner.UpsShippingTest@448c8166]" name="afterTest" is-config="true" duration-ms="106" started-at="2019-12-04T15:49:07Z" finished-at="2019-12-04T15:49:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterTestMethod()[pri:0, instance:ups.pack.testRunner.UpsTrackingTest@4470fbd6]" name="afterTestMethod" is-config="true" duration-ms="1022" started-at="2019-12-04T15:49:07Z" finished-at="2019-12-04T15:49:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestMethod -->
+      </class> <!-- ups.pack.testRunner.UpsLoginTest -->
+      <class name="ups.pack.testRunner.UpsShippingTest">
+        <test-method status="PASS" signature="shippingTest()[pri:0, instance:ups.pack.testRunner.UpsShippingTest@448c8166]" name="shippingTest" duration-ms="2468" started-at="2019-12-04T15:49:00Z" finished-at="2019-12-04T15:49:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shippingTest -->
+      </class> <!-- ups.pack.testRunner.UpsShippingTest -->
+      <class name="ups.pack.testRunner.UpsTrackingTest">
+        <test-method status="PASS" signature="trackingTest()[pri:0, instance:ups.pack.testRunner.UpsTrackingTest@4470fbd6]" name="trackingTest" duration-ms="510" started-at="2019-12-04T15:49:02Z" finished-at="2019-12-04T15:49:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- trackingTest -->
+      </class> <!-- ups.pack.testRunner.UpsTrackingTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
