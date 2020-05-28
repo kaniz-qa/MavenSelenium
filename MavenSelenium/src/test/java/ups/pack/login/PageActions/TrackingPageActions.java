@@ -12,6 +12,12 @@ public class TrackingPageActions {
 		trackingPage = new TrackingPageElements(driver);
 	}
 
+	public void clearTrack() {
+		trackingPage.trackingNumber().clear();
+	}
+
+	
+	
 	public void inputTrackingNumber(String track) {
 		trackingPage.trackingNumber().sendKeys(track);
 	}

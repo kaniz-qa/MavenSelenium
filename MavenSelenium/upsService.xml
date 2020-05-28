@@ -2,7 +2,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="ups.pack.testRunner.UpsSreviceTest"/>
+      <class name="ups.pack.testRunner.UpsServiceTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

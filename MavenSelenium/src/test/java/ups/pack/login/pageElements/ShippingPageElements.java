@@ -1,6 +1,11 @@
 package ups.pack.login.pageElements;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -24,7 +29,7 @@ public class ShippingPageElements {
 	}
 	*/
 	public Select countryTeritory() {
-		Select counTeri = new Select(driver.findElement(By.name("countryDropdown")));
+		Select counTeri = new Select(driver.findElement(By.xpath("//select[@id='origincountry']")));
 		//counTeri.selectByVisibleText("United States");
 		return counTeri;
 	}
@@ -64,6 +69,13 @@ public class ShippingPageElements {
 		return city;
 	}
 	
+	public WebElement otherAdd() {
+		WebElement otherAddress = driver.findElement(By.xpath("//*[@id=\"originstate\"]"));
+		return otherAddress;
+	}
+	
+	
+	/*
 	public WebElement resAdd() {
 		WebElement resedentialAdd = driver.findElement(By.xpath("//*[@id=\"originisResidentialLabel\"]/span/span[3]"));
 		return resedentialAdd;
@@ -91,6 +103,13 @@ public class ShippingPageElements {
 		return extension;
 	}
 	
+	public WebElement shippingForm() throws IOException {
+		WebElement form = driver.findElement(By.xpath("//form[@class='ng-untouched ng-pristine ng-invalid ng-star-inserted']"));
+		return form;
+	}
+	
+	
+	
 	public WebElement chkbox() {
 		WebElement chkbox = driver.findElement(By.className("ups-checkbox-custom-label"));
 		return chkbox;
@@ -99,19 +118,19 @@ public class ShippingPageElements {
 	
 	
 	public WebElement toggleBtn() {
-		WebElement toggleBtn = driver.findElement(By.xpath("//*[@id=\"returnAddressForm_label\"]/common-switch/label/span/span[3]"));
+		WebElement toggleBtn =   driver.findElement(By.xpath("//*[@id=\"returnSwitch\"]"));
+				//driver.findElement(By.id("returnSwitch"));
 		return toggleBtn;
 	}
 	
-	
-	
+	 
 	/*
 	 * public WebElement toggleBtn() { WebElement toggleBtn =
 	 * driver.findElement(By.className("ups-lever_switch_bg")); return toggleBtn; }
 	 */
 	
 	public WebElement cancelShipment() {
-		WebElement cancelShipment = driver.findElement(By.xpath("//*[@id=\"nbsBackForwardNavigationCancelShipmentButton\"]"));
+		WebElement cancelShipment = driver.findElement(By.id("nbsBackForwardNavigationCancelShipmentButton"));
 		return cancelShipment;
 	}
 	

@@ -1,6 +1,12 @@
 package ups.pack.login.PageActions;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import ups.pack.login.pageElements.ShippingPageElements;
 
@@ -22,37 +28,42 @@ public class ShippingPageActions {
 		shippingPageElement.createShipment().click();
 	}
 	*/
-	public void countryTeritory() {
-		shippingPageElement.countryTeritory().selectByVisibleText("Spain");
+	public void countryTeritory(String country) {
+		shippingPageElement.countryTeritory().selectByVisibleText(country);
 	}
 	
-	public void orgName() {
-		shippingPageElement.orgName().sendKeys("Talen Tech");
+	public void orgName(String companyName) {
+		shippingPageElement.orgName().sendKeys(companyName);
 	}
 	
-	public void contName() {
-		shippingPageElement.contactName().sendKeys("Simon");
+	public void contName(String contactName) {
+		shippingPageElement.contactName().sendKeys(contactName);
 	}
 	
-	public void addSt() {
-		shippingPageElement.addStreet().sendKeys("74 st");
+	public void addSt(String strAddress) {
+		shippingPageElement.addStreet().sendKeys(strAddress);
 	}
 	
-	public void addApt() {
-		shippingPageElement.addApt().sendKeys("2nd fl");
+	public void addApt(String aptAddress) {
+		shippingPageElement.addApt().sendKeys(aptAddress);
 	}
 	
-	public void addDpt() {
-		shippingPageElement.addDpt().sendKeys("SQA");
+	public void addDpt(String dptAddress) {
+		shippingPageElement.addDpt().sendKeys(dptAddress);
 	}
 	
-	public void zip() {
-		shippingPageElement.zipCode().sendKeys("11372");
+	public void zip(String zipCode) {
+		shippingPageElement.zipCode().sendKeys(zipCode);
 	}
 	
-	public void city() {
-		shippingPageElement.city().sendKeys("New York");
+	public void city(String city) {
+		shippingPageElement.city().sendKeys(city);
 	}
+	
+	public void otherAddress(String otherAdd) {
+		shippingPageElement.otherAdd().sendKeys(otherAdd);
+	}
+	
 	
 	/*
 	 * public void state() {
@@ -60,36 +71,54 @@ public class ShippingPageActions {
 	 */
 	
 	public void residentialAdd() {
-		shippingPageElement.resAdd().click();
+		//shippingPageElement.resAdd().click();
+		//shippingPageElement.resAdd().equals("true");
+		//shippingPageElement.resAdd().getAttribute(resAddress).equals("true");
 	}
 	
 	
-	public void email() {
-		shippingPageElement.email().sendKeys("talentech@gmail.com");
+	public void email(String email) {
+		shippingPageElement.email().sendKeys(email);
 	}
 	
-	public void phone() {
-		shippingPageElement.phone().sendKeys("9294023045");
+	public void phone(String phone) {
+		shippingPageElement.phone().sendKeys(phone);
 	}
 	
-	public void extn() {
-		shippingPageElement.extension().sendKeys("123");
+	public void extn(String extn) {
+		shippingPageElement.extension().sendKeys(extn);
 	}
+	
+	
+	public void shippingForm() throws IOException {
+		File file = shippingPageElement.shippingForm().getScreenshotAs(OutputType.FILE);
+		File destFile = new File("form.png");
+		FileUtils.copyFile(file, destFile);
+	
+	}
+	
 	
 	public void chkbox() {
-		shippingPageElement.chkbox().click();
+		
+	shippingPageElement.chkbox().click();
+		
+			
+		//shippingPageElement.chkbox().getAttribute(chk).equals("true");
 	}
 	
 	public void toggleBtn() {
-		shippingPageElement.toggleBtn().click();
+		shippingPageElement.toggleBtn().click() ;
+	//shippingPageElement.toggleBtn().getAttribute(tgltn).equals("false");
 	}
 	
 	public void cancelShipment() {
 		shippingPageElement.cancelShipment().click();
+		//shippingPageElement.cancelShipment().getAttribute(cancelShip).equals("true");
 	}
 	
 	public void yesBtn() {
 		shippingPageElement.yesBtn().click();
+		//shippingPageElement.yesBtn().getAttribute(yesBtn).equals("true");
 	}
 	
 }

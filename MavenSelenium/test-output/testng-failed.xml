@@ -5,9 +5,9 @@
     <classes>
       <class name="ups.pack.testRunner.UpsShippingTest">
         <methods>
-          <include name="shippingTest"/>
-          <include name="beforeMethod"/>
-          <include name="afterTest"/>
+          <include name="afterTestClass"/>
+          <include name="shippingTest" invocation-numbers="0 1"/>
+          <include name="beforeClass"/>
         </methods>
       </class> <!-- ups.pack.testRunner.UpsShippingTest -->
     </classes>
